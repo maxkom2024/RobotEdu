@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* el tamaño de caja se va a mantener estable, no importa si se le añade un padding, el tamaño de caja se quedará con el tamaño indicado y el padding crecerá hacia adentro */
+
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+  }
+  
+  /* Fondo de la página */
+  body {
+    background: linear-gradient(180deg, #e0e0e0, #c0c0c0);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+  
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+  }
+  
+  /* Fondo de la página */
+  body {
+    background: linear-gradient(180deg, #f0eaea, #7e7979);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+  
+  /* Main section */
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+  }
+  
+  #contacto {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  #contacto p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  form input,
+  form textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  form button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #b81aa3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #a04589;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 560px) {
+    #contacto {
+      padding: 10px;
+    }
+    #contacto h2 {
+      font-size: 1.5rem;
+    }
+    form button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 560px) and (max-width: 850px) {
+    #contacto h2 {
+      font-size: 1.8rem;
+    }
+    form button {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 850px) {
+    #contacto h2 {
+      font-size: 2.2rem;
+    }
+    form button {
+      font-size: 1.1rem;
+    }
+  }
+  
