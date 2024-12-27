@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RobotEdu</title>
+    <title>RobotEdu-Inicio</title>
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
     <link rel="stylesheet" href="estilos.css">
-   <link rel='icon' href="img/icono.png" type="image/png">
+    <link rel='icon' href="img/icono.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@1.8.0/css/flag-icons.min.css">
 
 </head>
 
@@ -28,7 +30,8 @@
                 <li><a href="#nuestros-servicios">Productos</a></li>
                 <li><a href="#profesionales">Profesionales</a></li>
                 <li><a href="contacto.html">Contactanos</a></li>
-                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#reseñas">Reseñas</a></li> 
+                <li><a href="#carrito">Carrito</a></li>
             </ul>
     </header>
     <section id="hero">
@@ -60,34 +63,21 @@
         <section id="nuestros-servicios">
             <div class="container">
                 <h1>Nuestros Productos</h1>
-                <div class="servicios">
-                    <div class="carta">
-                        <h2>CURSO DE ARDUINO BÁSICO</h2><br><br>
-                        <p>¿Estás listo para sumergirte en el fascinante mundo de la electrónica y la programación?
-                            Nuestro Curso de Arduino Básico para Educación está diseñado para principiantes y
-                            entusiastas de todas las edades.</p>
-                        <button class="Button_id_Arduino">+ Info</button>
-
-                    </div>
-                    <div class="carta">
-                        <h2>CURSO DE MICRO:BIT</h2><br><br><br><br>
-                        <p>¿Quieres aprender y enseñar los fundamentos de la programación y la electrónica de manera
-                            sencilla y divertida? Nuestro Curso de Micro para Educación está diseñado especialmente para
-                            estudiantes, docentes y padres </p>
-                        <button class="Button_id_Micro">+ Info</button>
-                    </div>
-                    <div class="carta">
-                        <h2>CURSO DE WEEEBOT</h2><br><br><br><br>
-                        <p>¡Lleva el aprendizaje STEM a un nuevo nivel, Perfecto para
-                            estudiantes, padres y docentes, este curso te guía paso a paso para aprender robótica,
-                            programación y mecánica con el versátil y amigable WeeeBot.</p>
-                        <button class="Button_id_Weeebot">+ Info</button>
-                    </div>
+                <div id="contenedorCursos" class="servicios">
                 </div>
             </div>
 
         </section>
+       <section id="carrito">
+        <h2>Carrito</h2>
+        <ul> 
 
+        </ul>
+        <p>Total a pagar: $0</p>
+        <input  type="button" id="boton-borrar" value="Borrar">
+        <input type="button" id="boton-pagar" value="Pagar ">
+        <p id="mensajeCarrito"></p>
+       </section>
         <section id="profesionales">
             <h1>Nuestros Profesioneles</h1>
             <div class="container">
@@ -124,6 +114,7 @@
             <p>&copy; RobotEdu 2024</p>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
