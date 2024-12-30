@@ -499,13 +499,9 @@ section li {
 footer .container {
     justify-content: flex-end;
 }
-}
 
-.boton-agregar-carrito {
-    background-color: #463f3f;
-    border-radius: 5px;
-    color: #f1efef;
-}
+
+
 
 /*a partir de los 560px pasa esto*/
 @media (min-width: 580px) {
@@ -531,7 +527,18 @@ footer .container {
         padding: 14px 12px 6px;
     }
 }
+@media (max-width: 580px) {
+    #nuestros-servicios .servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #nuestros-servicios .carta {
+        width: 90%; /* Ajusta el ancho para que quede proporcional */
+        margin: 10px 0; /* Espaciado entre cartas */
+    }
+}
 /*hasta los 560px pasa esto*/
 @media (max-width: 580px) {
     section h1 {
